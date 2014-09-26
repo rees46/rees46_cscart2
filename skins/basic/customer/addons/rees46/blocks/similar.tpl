@@ -1,3 +1,4 @@
+{* $Id$ *}
 {** block-description:rees46_similar **}
 
 {if $product}

@@ -1,3 +1,4 @@
+{* $Id$ *}
 {** block-description:rees46_also_bought **}
 
 {if $product}

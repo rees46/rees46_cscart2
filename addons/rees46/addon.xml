@@ -1,65 +1,66 @@
 <?xml version="1.0"?>
+<addon>
+	<id>rees46</id>
+	<name>REES46</name>
+	<tooltip>REES46</tooltip>
+	<priority>100500</priority>
+	<position>0</position>
+	<version>1.0</version>
+	<status>active</status>
+	<dependencies></dependencies>
 
-<addon scheme="2.0">
-    <id>rees46</id>
-    <version>1.0</version>
-    <default_language>RU</default_language>
-    <priority>100500</priority>
-    <auto_install>PROFESSIONAL,MULTIVENDOR,ULTIMATE</auto_install>
+	<description>Модуль персонализации REES46 анализирует действия покупателей на вашем интернет-магазине и уже с первых шагов выявляет цели и предпочтения каждого вашего посетителя.</description>
 
-    <name>REES46: персональные рекомендации товаров в интернет-магазине</name>
-    <description>
-        Модуль персонализации REES46 анализирует действия покупателей на вашем интернет-магазине и уже с первых шагов выявляет цели и предпочтения каждого вашего посетителя.
-    </description>
-    
-    <settings>
-        <sections>
-            <section id="main" edition_type="ROOT">
-                <name>REES46</name>
-                <items>
-                    <item id="info">
-                        <type>info</type>
-                        <handler>fn_rees46_generate_info</handler>
-                        <value></value>
-                        <default_value></default_value>
-                        <variants/>
-                    </item>
-                    <item id="shop_id">
-                        <name>Код вашего магазина</name>
-                        <type>input</type>
-                        <value></value>
-                        <default_value></default_value>
-                        <variants/>
-                    </item>
-                    <item id="shop_secret">
-                        <name>Секретный ключ вашего магазина</name>
-                        <type>input</type>
-                        <value></value>
-                        <default_value></default_value>
-                        <variants/>
-                    </item>
-                </items>
-            </section>
-        </sections>
-    </settings>
+	<opt_language_variables>
+		<item lang="RU" for="name">Блок рекомендаций REES46</item>
+		<item lang="RU" id="_rees46">Блок рекомендаций REES46</item>
+		<item lang="RU" id="block_rees46">Блок рекомендаций REES46</item>
+		<item lang="RU" id="block_rees46_description">Блок рекомендаций выбранного типа</item>
+		<item lang="RU" id="rees46_also_bought">С этим также покупают</item>
+		<item lang="RU" id="rees46_interesting">Вам это будет интересно</item>
+		<item lang="RU" id="rees46_popular">Популярные</item>
+		<item lang="RU" id="rees46_recently_viewed">Вы недавно смотрели</item>
+		<item lang="RU" id="rees46_see_also">Посмотрите также</item>
+		<item lang="RU" id="rees46_similar">Похожие товары</item>
 
-    <language_variables>
-        <item lang="RU" id="block_rees46">Блок рекомендаций REES46</item>
-        <item lang="RU" id="block_rees46_description">Блок рекомендаций выбранного типа</item>
-        <item lang="RU" id="rees46_also_bought">С этим также покупают</item>
-        <item lang="RU" id="rees46_interesting">Вам это будет интересно</item>
-        <item lang="RU" id="rees46_popular">Популярные</item>
-        <item lang="RU" id="rees46_recently_viewed">Вы недавно смотрели</item>
-        <item lang="RU" id="rees46_see_also">Посмотрите также</item>
-        <item lang="RU" id="rees46_similar">Похожие товары</item>
-
-        <item lang="EN" id="block_rees46">Блок рекомендаций REES46</item>
-        <item lang="EN" id="block_rees46_description">Блок рекомендаций выбранного типа</item>
-        <item lang="EN" id="rees46_also_bought">С этим также покупают</item>
-        <item lang="EN" id="rees46_interesting">Вам это будет интересно</item>
-        <item lang="EN" id="rees46_popular">Популярные</item>
-        <item lang="EN" id="rees46_recently_viewed">Вы недавно смотрели</item>
-        <item lang="EN" id="rees46_see_also">Посмотрите также</item>
-        <item lang="EN" id="rees46_similar">Похожие товары</item>
-    </language_variables>
+		<item lang="EN" for="name">Блок рекомендаций REES46</item>
+		<item lang="EN" id="_rees46">Блок рекомендаций REES46</item>
+		<item lang="EN" id="block_rees46">Блок рекомендаций REES46</item>
+		<item lang="EN" id="block_rees46_description">Блок рекомендаций выбранного типа</item>
+		<item lang="EN" id="rees46_also_bought">С этим также покупают</item>
+		<item lang="EN" id="rees46_interesting">Вам это будет интересно</item>
+		<item lang="EN" id="rees46_popular">Популярные</item>
+		<item lang="EN" id="rees46_recently_viewed">Вы недавно смотрели</item>
+		<item lang="EN" id="rees46_see_also">Посмотрите также</item>
+		<item lang="EN" id="rees46_similar">Похожие товары</item>
+	</opt_language_variables>
+	
+	<opt_settings>
+		<section name="general">
+			<item id="info">
+				<type>info</type>
+				<tooltip>info</tooltip>
+				<handler>fn_rees46_generate_info</handler>
+				<value></value>
+				<default_value></default_value>
+				<variants/>
+			</item>
+			<item id="shop_id">
+				<name>Код вашего магазина</name>
+				<tooltip>Код вашего магазина</tooltip>
+				<type>input</type>
+				<value></value>
+				<default_value></default_value>
+				<variants/>
+			</item>
+			<item id="shop_secret">
+				<name>Секретный ключ вашего магазина</name>
+				<tooltip>Секретный ключ вашего магазина</tooltip>
+				<type>input</type>
+				<value></value>
+				<default_value></default_value>
+				<variants/>
+			</item>
+		</section>
+	</opt_settings>
 </addon>
