@@ -16,23 +16,23 @@
 		<item lang="RU" id="_rees46">Блок рекомендаций REES46</item>
 		<item lang="RU" id="block_rees46">Блок рекомендаций REES46</item>
 		<item lang="RU" id="block_rees46_description">Блок рекомендаций выбранного типа</item>
-		<item lang="RU" id="rees46_also_bought">С этим также покупают</item>
-		<item lang="RU" id="rees46_interesting">Вам это будет интересно</item>
-		<item lang="RU" id="rees46_popular">Популярные</item>
-		<item lang="RU" id="rees46_recently_viewed">Вы недавно смотрели</item>
-		<item lang="RU" id="rees46_see_also">Посмотрите также</item>
-		<item lang="RU" id="rees46_similar">Похожие товары</item>
+		<item lang="RU" id="rees46_also_bought">Rees46: С этим также покупают</item>
+		<item lang="RU" id="rees46_interesting">Rees46: Вам это будет интересно</item>
+		<item lang="RU" id="rees46_popular">Rees46: Популярные</item>
+		<item lang="RU" id="rees46_recently_viewed">Rees46: Вы недавно смотрели</item>
+		<item lang="RU" id="rees46_see_also">Rees46: Посмотрите также</item>
+		<item lang="RU" id="rees46_similar">Rees46: Похожие товары</item>
 
 		<item lang="EN" for="name">Блок рекомендаций REES46</item>
 		<item lang="EN" id="_rees46">Блок рекомендаций REES46</item>
 		<item lang="EN" id="block_rees46">Блок рекомендаций REES46</item>
 		<item lang="EN" id="block_rees46_description">Блок рекомендаций выбранного типа</item>
-		<item lang="EN" id="rees46_also_bought">С этим также покупают</item>
-		<item lang="EN" id="rees46_interesting">Вам это будет интересно</item>
-		<item lang="EN" id="rees46_popular">Популярные</item>
-		<item lang="EN" id="rees46_recently_viewed">Вы недавно смотрели</item>
-		<item lang="EN" id="rees46_see_also">Посмотрите также</item>
-		<item lang="EN" id="rees46_similar">Похожие товары</item>
+		<item lang="EN" id="rees46_also_bought">Rees46: С этим также покупают</item>
+		<item lang="EN" id="rees46_interesting">Rees46: Вам это будет интересно</item>
+		<item lang="EN" id="rees46_popular">Rees46: Популярные</item>
+		<item lang="EN" id="rees46_recently_viewed">Rees46: Вы недавно смотрели</item>
+		<item lang="EN" id="rees46_see_also">Rees46: Посмотрите также</item>
+		<item lang="EN" id="rees46_similar">Rees46: Похожие товары</item>
 	</opt_language_variables>
 	
 	<opt_settings>
