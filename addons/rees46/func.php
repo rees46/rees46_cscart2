@@ -46,7 +46,7 @@ function fn_rees46_delete_cart_product($cart, $cart_id, $full_erase)
     }
 }
 
-function fn_rees46_place_order($order_id, $action, $order_status, $cart, $auth)
+function fn_rees46_place_order($order_id, $action, $__order_status, $cart)
 {
     $data = array(
         'items'     => array(),
