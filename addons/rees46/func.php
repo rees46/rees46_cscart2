@@ -24,7 +24,7 @@ function fn_rees46_generate_info()
           <p>Прочитать <a href="http://memo.mkechinov.ru/pages/viewpage.action?pageId=1409157" target="_blank">подробную инструкцию</a> по настройке модуля.</p>
         ';
 
-        $res = $res . '<p><a href="/admin.php?dispatch=rees46.export_orders" class="btn btn-primary">Выгрузить заказы</a> (может занять некоторое время)</p>';
+        $res = $res . '<p><a href="'. $config['admin_index']. '/admin.php?dispatch=rees46.export_orders" class="btn btn-primary">Выгрузить заказы</a> (может занять некоторое время)</p>';
 
         return $res;
     }
@@ -32,6 +32,7 @@ function fn_rees46_generate_info()
 
 function fn_rees46_add_to_cart($cart, $product_id, $_id)
 {
+    setcookie('rees46_recommended_by', $_REQUEST['recommended_by'], strtotime('+1 hour'), '/'));
     setcookie('rees46_track_cart', json_encode(array('item_id' => $product_id)), strtotime('+1 hour'), '/');
 }
 
