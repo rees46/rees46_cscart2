@@ -32,7 +32,9 @@ function fn_rees46_generate_info()
 
 function fn_rees46_add_to_cart($cart, $product_id, $_id)
 {
-    setcookie('rees46_track_cart', json_encode(array('item_id' => $product_id)), strtotime('+1 hour'), '/');
+    if (isset($_REQUEST) && ($_REQUEST['dispatch'] != 'order_management.edit')) {
+        setcookie('rees46_track_cart', json_encode(array('item_id' => $product_id)), strtotime('+1 hour'), '/');
+    }
 }
 
 function fn_rees46_delete_cart_product($cart, $cart_id, $full_erase)
