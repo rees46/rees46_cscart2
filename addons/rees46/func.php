@@ -32,7 +32,6 @@ function fn_rees46_generate_info()
 
 function fn_rees46_add_to_cart($cart, $product_id, $_id)
 {
-    setcookie('rees46_recommended_by', $_REQUEST['recommended_by'], strtotime('+1 hour'), '/'));
     setcookie('rees46_track_cart', json_encode(array('item_id' => $product_id)), strtotime('+1 hour'), '/');
 }
 
