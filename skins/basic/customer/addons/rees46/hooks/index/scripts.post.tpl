@@ -42,11 +42,7 @@
         {/if}
 {literal}
         REES46.addReadyListener(function() {
-          var link = document.createElement('link');
-          link.setAttribute('rel', 'stylesheet');
-          link.setAttribute('type', 'text/css');
-          link.setAttribute('href', '//rees46.com/shop_css/{$rees46.shop_id}');
-          document.getElementsByTagName('head')[0].appendChild(link);
+          REES46.addStyleToPage();
 {/literal}
           {if $controller == 'products' && $mode == 'view'}
             {if $product}
